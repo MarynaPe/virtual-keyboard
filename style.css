@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+}
+
+.textarea__keyboard {
+  width: 100%;
+  font-size: 1.25rem;
+  height: 16rem;
+  padding: 10px;
+  border: 12px double gold;
+}
+
+.textarea__title {
+  font-family: 'Sigmar', cursive;
+  font-size: 35px;
+  margin-top: 0.1em;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #cbf31b;
+  line-height: 1;
+  text-align: center;
+}
+
+.keyboard {
+  width: 100%;
+}
+
+.keyboard__wrapper {
+  width: 950px;
+  background-color: #92ca2a;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+.keys__list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+.key__item {
+  position: relative;
+  display: flex;
+  border-radius: 22% 78% 21% 79% / 100% 0% 100% 0%;
+  border: 2px solid gold;
+  width: 55px;
+  height: 45px;
+  margin: 2px;
+  padding: 0;
+  background-color: #3c2020;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.keyboard__keys {
+  display: flex;
+  text-align: center;
+}
+
+.key__round::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #8f8484;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+.key__round_active::after {
+  background-color: #5edf60;
+}
+
+.key-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.key_active {
+  background-color: #c8591d;
+  transition: all 0.5s;
+}
+
+.key_x-small {
+  width: 60px;
+}
+
+.key_small {
+  width: 100px;
+}
+
+.key_medium{
+  width: 125px;
+}
+
+.key_large {
+  width: 145px;
+}
+
+.key_x-large {
+  width: 300px;
+}
+
+.description {
+  width: 950px;
+  padding: 10px;
+  background-color: #c2b9b9;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
